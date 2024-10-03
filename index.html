@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quiz: Grundlehrgang</title>
+    <script src="js/Hyphenopoly_Loader.js"></script>
+
+    <script>
+    Hyphenopoly.config({
+        require: {
+            "de": "Silbentrennungsalgorithmus",
+        },
+        setup: {
+            selectors: {
+                ".container": {},
+                "#answers": {}
+            }
+        }
+    });
+    </script>
+
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+    
+    <main>
+        <div id="process">
+            <div class="handle"></div>
+            <div class="percent"><span>0</span> % richtig</div>
+        </div>
+
+        <div id="result">
+            <div id="result-message"></div>
+            <div id="question-answers"></div>
+
+            <div class="button reload">Noch einmal</div>
+
+        </div>
+
+        <section id="questionHead" class="quiz">
+            Frage <span id="currentQuestion">1</span><sub>/<span id="totalQuestions"></span></sub>
+        </section>
+
+
+        <div id="question" class="quiz" lang="de" data-answer-text="Answer 2" data-answer-number="2">
+            <div class="type"></div>
+            <div class="text"></div>
+        </div>
+
+
+        <section id="answers" class="quiz" lang="de">
+            <div class="answer" data-state="neutral">
+                <div class="text">Answer 1</div>
+            </div>
+
+            <div class="answer" data-state="neutral">
+                <div class="text">Answer 2</div>
+            </div>
+
+            <div class="answer" data-state="neutral">
+                <div class="text">Answer 3</div>
+            </div>
+
+            <div class="button next disabled">
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <div>Weiter</div>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <canvas class="confetti" id="canvas"></canvas>
+        <div id="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </footer>
+
+    <script>
+        let questionAmount = 30;
+    </script>
+    <script src="js/catalog.js"></script>
+    <script src="js/catalog-functions.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/confetti.js"></script>
+    <script src="js/result.js"></script>
+</body>
+</html>
