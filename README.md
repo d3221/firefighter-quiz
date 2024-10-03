@@ -1,5 +1,5 @@
 # Version
-The quiz uses the question of the [HLFS from January 2024](https://hlfs.hessen.de/sites/hlfs.hessen.de/files/2024-02/antwortkatalog_2024.pdf)
+The quiz uses the questions of the [HLFS from January 2024](https://hlfs.hessen.de/sites/hlfs.hessen.de/files/2024-02/antwortkatalog_2024.pdf)
 
 
 # Instruction
